@@ -1,300 +1,371 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/materialize.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>    
-    <nav class=" red darken-4  container">
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo ">Logo</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+
+<body>
+  <nav class=" red darken-2">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#inicio" class="brand-logo ">MaterializeCSS</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="red-text text-lighten-5" href="#presentacion">Presentación</a></li>
+          <li><a class="red-text text-lighten-5" href="#practica">Practica</a></li>
+          <li><a class="red-text text-lighten-5" href="#trabajos">Trabajos</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <ul class="sidenav red darken-1" id="mobile-demo">
+    <li><a class="red-text text-lighten-5" href="#presentacion">Presentación</a></li>
+    <li><a class="red-text text-lighten-5" href="#practica">Practica</a></li>
+    <li><a class="red-text text-lighten-5" href="#trabajos">Trabajos</a></li>
+  </ul>
+
+  <main>
+    <!-- div.row>div.container>div.col.s12>h3.grey-text text-darken-4{UTP} -->
+    <div class="section" id="inicio">
+      <div class="row section">
+        <div class="container ">
+          <div class="col s12 m6">
+            <h3 class="grey-text text-darken-4 text-darken-4">Introducción a MaterializeCSS
+            </h3>
+            <p>Taller realizado el sábado 22 de febrero para el capitulo técnico IEEE Computer Society UTP.</p>
+          </div>
+          <div class="col s12 m6">
+            <img src="img/flyer.jpeg" alt="" class="responsive-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row section" id="presentacion">
+      <div class="container">
+        <div class="col s12">
+          <h3 class="grey-text text-darken-4">Presentación</h3>
+          <embed src="presentacion/MaterializeCSS-PryscilaFlores.pdf" type="application/pdf" width="100%"
+            height="600px" />
+        </div>
+      </div>
+    </div>
+
+
+    <div id="practica">
+      <div class="row">
+        <div class="container">
+          <div class="col s12">
+            <h3 class="grey-text text-darken-4">Parte practica
+            </h3>
+            <p class="grey-text text-darken-2">Usamos algunos de los componentes de MaterializeCSS para crear una pequeña web estática</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+
+        <div class="col s12 ">
+          <div class="card-panel grey darken-2">
+            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively. I am similar to what is called a panel
+              in other frameworks.
+            </span><br><br>
+            <a class="waves-effect waves-light btn grey "><i class="material-icons left">cloud</i>button</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div.row>div.container>div.col.s12 -->
+    <div class="row">
+      <div class="container">
+        <div class="col s12 m12">
+          <table class="responsive-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+              </tr>
+              <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+              </tr>
+              <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>$7.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- div.row>div.container>div.col.s12  -->
+    <div class="row">
+      <div class="container">
+        <div class="col s12">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal red darken-2">
+            <div class="modal-content white-text">
+              <h4>Modal Header</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo eius, explicabo numquam pariatur
+                dignissimos veritatis natus minus. Voluptatibus, adipisci. Fuga a nostrum atque sed dolorem sunt porro
+                aperiam sint!</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat red-text darken-2">Agree</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="col s12">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
           </ul>
         </div>
-      </nav>
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-
-      <main>
-          <!-- div.row>div.container>div.col.s12>h1.grey-text{UTP} -->
-          <div>
-              <div class="row">
-                  <div class="container">
-                      <div class="col s12">
-                          <h1 class="grey-text">Lorem ipsum dolor 
-                          </h1>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- div.row>div.container>div.col.s12 -->
-          <div class="row">
-              <div class="container">
-                  <div class="col s12">
-                    <div class="slider">
-                        <ul class="slides">
-                          <li>
-                            <img src="img/cat1.jpg"> <!-- random image -->
-                            <div class="caption right-align red-text text-accent-4">
-                              <h3>Right Aligned Caption</h3>
-                              <h5 class="light red-text text-darken-3">Here's our small slogan.</h5>
-                            </div>
-                          </li>
-                          <li>
-                            <img src="img/cat2.jpg"> <!-- random image -->
-                            <div class="caption center-align">
-                              <h3>This is our big Tagline!</h3>
-                              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        <div class="row">
-            <div class="container">
-                
-            <div class="col s12 ">
-              <div class="card-panel grey darken-2">
-                <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                </span><br><br>
-                <a class="waves-effect waves-light btn grey "><i class="material-icons left">cloud</i>button</a>
-
-              </div>
-            </div>
-            </div>
-          </div>
-          <!-- div.row>div.container>div.col.s12 -->
-          <div class="row">
-              <div class="container">
-                  <div class="col s12 m12">                      
-                    <table  class="responsive-table">
-                        <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Item Name</th>
-                            <th>Item Price</th>
-                        </tr>
-                        </thead>
-
-                        <tbody>
-                        <tr>
-                            <td>Alvin</td>
-                            <td>Eclair</td>
-                            <td>$0.87</td>
-                        </tr>
-                        <tr>
-                            <td>Alan</td>
-                            <td>Jellybean</td>
-                            <td>$3.76</td>
-                        </tr>
-                        <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
-                            <td>$7.00</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                  </div>
-              </div>
-          </div>
-
-          <!-- div.row>div.container>div.col.s12  -->
-          <div class="row">
-              <div class="container">
-                  <div class="col s12">
-                        <!-- Modal Trigger -->
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-                        <!-- Modal Structure -->
-                        <div id="modal1" class="modal red darken-4">
-                            <div class="modal-content white-text">
-                            <h4>Modal Header</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo eius, explicabo numquam pariatur dignissimos veritatis natus minus. Voluptatibus, adipisci. Fuga a nostrum atque sed dolorem sunt porro aperiam sint!</p>
-                            </div>
-                            <div class="modal-footer">
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat red-text darken-4">Agree</a>
-                            </div>
-                        </div>
-                  </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="container">
-                  <div class="col s12">
-                    <ul class="collapsible">
-                        <li>
-                          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="container">
-                  <div class="col s12 m6 l4">
-                    <img class="responsive-img" src="img/cat2.jpg">
-                  </div>
-                  <div class="col s12 m6 l4">
-                    <img class="responsive-img" src="img/cat1.jpg">
-                  </div>
-                  <div class="col s12 m6 l4">
-                    <img class="responsive-img" src="img/cat2.jpg">
-                  </div>
-              </div>
-          </div>
-
-
-
-        <!-- div.row>div.container>div.col.s12  -->
-        <div class="grey darken-2 white-text">
-             <div class="row">
-            <div class="container">
-                <div class="col s12">
-                    <form action="">
-                        <br>
-                        <br>
-                        <br>
-                        <h5>Contactanos</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi cupiditate suscipit minus doloribus quasi labore in rerum delectus, possimus totam doloremque. Molestias dicta ea facilis ullam consectetur nihil maiores placeat!</p>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <i class="material-icons prefix">account_circle</i>
-                              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                              <label for="first_name">First Name</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <i class="material-icons prefix">account_circle</i>
-                              <input id="last_name" type="text" class="validate">
-                              <label for="last_name">Last Name</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-                              <label for="textarea2">Textarea</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <input id="password" type="password" class="validate">
-                              <label for="password">Password</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <input id="email" type="email" class="validate">
-                              <label for="email">Email</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="file-field input-field">
-                                <div class="btn">
-                                  <span>File</span>
-                                  <input type="file">
-                                </div>
-                                <div class="file-path-wrapper">
-                                  <input class="file-path validate" type="text">
-                                </div>
-                              </div>
-                          </div>
-                          <div class="row">
-                              
-                        <div class="input-field col s12">
-                            <select>
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            </select>
-                            <label>Materialize Select</label>
-                        </div>
-                          </div>
-                          
-                              <button style="width: 100%;" class="btn waves-effect waves-light" type="submit" name="action">Submit
-  </button>
-
-
-                    </form>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="col s12 m6 l4">
+          <img class="responsive-img" src="img/cat2.jpg">
         </div>
-                        <br>
-                        <br>
-                        <br>
+        <div class="col s12 m6 l4">
+          <img class="responsive-img" src="img/cat1.jpg">
         </div>
-       
+        <div class="col s12 m6 l4">
+          <img class="responsive-img" src="img/cat2.jpg">
+        </div>
+      </div>
+    </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-      </main>
-
-
-
-
-
-
-
-
-      <footer class="page-footer red darken-4">
+    <!-- div.row>div.container>div.col.s12  -->
+    <div class="grey darken-2 white-text">
+      <div class="row">
         <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-              </ul>
-            </div>
+          <div class="col s12">
+            <form action="">
+              <br>
+              <br>
+              <br>
+              <h5>Contactanos</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi cupiditate suscipit minus doloribus
+                quasi labore in rerum delectus, possimus totam doloremque. Molestias dicta ea facilis ullam consectetur
+                nihil maiores placeat!</p>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                  <label for="textarea2">Textarea</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>File</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                  <label>Materialize Select</label>
+                </div>
+              </div>
+
+              <button style="width: 100%;" class="btn waves-effect waves-light" type="submit" name="action">Submit
+              </button>
+
+
+            </form>
           </div>
         </div>
-        <div class="footer-copyright">
-          <div class="container">
-          © 2014 Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div id="trabajos">
+      <div class="row">
+        <div class="container">
+          <div class="col s12">
+            <br>
+            <br>
+            <h3 class="grey-text text-darken-4">Proyectos hechos en el taller</h3>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+    <!-- div.row>div.container>div.col.s12 -->
+    <div class="row">
+      <div class="container">
+        <div class="col s12">
+          <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="proyectos/christian.jpeg">
+                <div class="caption right-align">
+                  <h3>Christian</h3>
+                </div>
+              </li>
+              <li>
+                <img src="proyectos/Fernando.jpeg">
+                <div class="caption center-align">
+                  <h3>Fernando</h3>
+                </div>
+              </li>
+              <li>
+                <img src="proyectos/gabriel.jpeg">
+                <div class="caption right-align">
+                  <h3>Gabriel</h3>
+                </div>
+              </li>
+              <li>
+                <img src="proyectos/kiara.jpeg">
+                <div class="caption center-align">
+                  <h3>Kiara</h3>
+                </div>
+              </li>
+              <li>
+                <img src="proyectos/lesly.jpeg">
+                <div class="caption right-align">
+                  <h3>Lesly</h3>
+                </div>
+              </li>
+              <li>
+                <img src="proyectos/luis.jpeg">
+                <div class="caption center-align">
+                  <h3>Luis</h3>
+                </div>
+              </li>
+              <li>
+                <img src="proyectos/moises.jpeg">
+                <div class="caption right-align">
+                  <h3>Moises</h3>
+                </div>
+              </li>
+              <li>
+                <img src="proyectos/luis2.jpeg">
+                <div class="caption center-align">
+                  <h3>Luis</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div id="">
+      <div class="row">
+        <div class="container">
+          <div class="col s12">
+            <h3 class="grey-text text-darken-4 center">Gracias</h3>
+            <img src="img/fin-taller.jpeg" alt="" class="responsive-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer red darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Introducción a Materialize CSS</h5>
+          <p class="red-text text-lighten-5">Taller realizado el sábado 22 de febrero para el capitulo técnico IEEE
+            Computer Society UTP.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Contenido</h5>
+          <ul>
+            <li><a href="#inicio" class="red-text text-lighten-5">Inicio</a></li>
+            <li><a href="#presentacion" class="red-text text-lighten-5">Presentación</a></li>
+            <li><a href="#practica" class="red-text text-lighten-5">Practica</a></li>
+            <li><a href="#trabajos" class="red-text text-lighten-5">Trabajos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container red-text text-lighten-4">
+        © 2020 Pryscila Flores
+      </div>
+    </div>
+  </footer>
 </body>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
 </html>
